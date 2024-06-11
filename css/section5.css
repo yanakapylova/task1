@@ -1,0 +1,69 @@
+section#screen5 {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-image: url("../img/pexels-christina-morillo-1181675\ 1.png");
+  color: white;
+  height: 525px;
+}
+
+section#screen5 .wrapper {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  align-content: center;
+  margin-top: -5px;
+  height: 100%;
+}
+
+h2,
+form {
+  grid-column: 5 / 9;
+}
+
+section#screen5 h2 {
+  width: 100%;
+  color: white;
+}
+
+section#screen5 form {
+  height: 45px;
+  display: flex;
+  width: 100%;
+}
+
+section#screen5 input {
+  width: 292px;
+  padding: 13px 27px;
+  outline: none;
+  border: none;
+}
+
+section#screen5 input::placeholder {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+section#screen5 button {
+  height: 100%;
+  background-color: #00afdb;
+  outline: none;
+  border: none;
+  width: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#screen5 button:hover {
+  background-color: #009cc2;
+}
+
+section#screen5 h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}

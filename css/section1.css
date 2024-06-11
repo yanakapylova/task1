@@ -1,0 +1,50 @@
+section#screen1 {
+  background-image: url("../img/bg-image.png");
+  background-size: cover;
+  height: 744px;
+  color: white;
+}
+
+section#screen1 h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  margin: 0;
+  margin-top: 134px;
+}
+
+section#screen1 div#main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 18px;
+}
+
+section#screen1 div#main .socials img {
+  width: 20px;
+  height: 20px;
+}
+
+section#screen1 div#main .socials  {
+ margin-top: 168px;
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+}
+
+section#screen1 div#main p {
+  width: 500px;
+  margin: 0;
+  line-height: 150% ;
+  font-size: 18px;
+  color: white;
+}
+
+section#screen1 .button {
+  margin-top: 9px;
+}
+
+
+

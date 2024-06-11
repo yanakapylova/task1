@@ -1,0 +1,53 @@
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: white;
+  height: 185px;
+  background-color: black;
+}
+
+footer .wrapper {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .menu {
+  display: flex;
+}
+
+footer .menu div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .menu div p {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+footer .menu div.first p {
+  padding-left: 0;
+}
+
+footer .menu div:not(.last) p {
+  border-right: #4e4e4e 1px solid;
+}
+footer .author {
+  color: #818181;
+}
