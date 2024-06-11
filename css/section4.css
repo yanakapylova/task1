@@ -10,11 +10,16 @@ section#screen4 .wrapper {
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
   align-content: center;
+
+  /* для pixel perfect */
   height: 842px;
 }
 
 section#screen4 .content-image-2 {
   grid-column: 2 / 6;
+
+  /* для pixel perfect */
+  margin-top: -10px;
 }
 
 section#screen4 .content-image-2 img {
@@ -24,6 +29,8 @@ section#screen4 .content-image-2 img {
 section#screen4 .content-block {
   grid-column: 7 / 11;
   align-self: center;
+
+  /* для pixel perfect */
   margin-top: -15px;
 }
 

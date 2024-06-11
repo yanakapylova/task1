@@ -1,6 +1,8 @@
 section#screen1 {
   background-image: url("../img/bg-image.png");
   background-size: cover;
+
+  /* для pixel perfect */
   height: 744px;
   color: white;
 }
@@ -10,16 +12,15 @@ section#screen1 h1 {
   text-transform: uppercase;
   letter-spacing: 4.5px;
   margin: 0;
-  margin-top: 134px;
 }
 
 section#screen1 div#main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* justify-content: center; */
   align-items: center;
   gap: 18px;
+  margin-top: 134px;
 }
 
 section#screen1 div#main .socials img {

@@ -4,6 +4,7 @@ section#screen5 {
   width: 100vw;
   background-image: url("../img/pexels-christina-morillo-1181675\ 1.png");
   color: white;
+  /* для pixel perfect */
   height: 525px;
 }
 
@@ -13,6 +14,8 @@ section#screen5 .wrapper {
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
   align-content: center;
+
+  /* для pixel perfect */
   margin-top: -5px;
   height: 100%;
 }
