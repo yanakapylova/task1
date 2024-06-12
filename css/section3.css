@@ -1,14 +1,41 @@
 section#screen3 {
-
-  /* для pixel perfect */
-  height: 450px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
   width: 100vw;
   padding-bottom: 50px;
   background-color: #f5f6f7;
+  height: 450px;
+}
+
+section#screen3 .wrapper {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  align-content: center;
+}
+
+section#screen3 .usercard {
+  grid-column: 2 / 5;
+}
+
+section#screen3 #slider {
+  grid-column: 6 / 13;
+}
+
+section#screen3 .usercard {
+  max-width: 300px;
+  height: 175px;
   display: flex;
-  gap: 140px;
-  justify-content: end;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  /* для pixel perfect */
+  margin-top: 70px;
 }
 
 section#screen3 h2 {
@@ -17,32 +44,16 @@ section#screen3 h2 {
   letter-spacing: 2.4px;
 
   /* для pixel perfect */
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
-section#screen3 .usercard {
-  width: 300px;
-  height: 175px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  margin-top: 35px;
-}
-
-section#screen3 .usercard img {
-  border-radius: 50%;
-
-  /* для pixel perfect */
-margin-bottom: 15px;
+section#screen3 #slider .wrapper {
+  margin-left: 272px;
 }
 
 section#screen3 #slider .items {
   display: flex;
   gap: 30px;
-  width: 894px;
-  overflow: hidden;
 }
 
 section#screen3 #slider .navigation {
@@ -82,9 +93,4 @@ section#screen3 #slider .navigation .arrow.right {
 
 section#screen3 #slider .navigation .arrow.right:hover {
   opacity: 0.5;
-}
-
-section#screen3 #slider .wrapper {
-  /* для pixel perfect */
-  margin-left: 272px;
 }
