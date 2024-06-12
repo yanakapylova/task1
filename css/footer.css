@@ -51,4 +51,5 @@ footer .menu div:not(.last) p {
 }
 footer .author {
   color: #818181;
+  font-size: 14px;
 }
