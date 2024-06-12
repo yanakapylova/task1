@@ -11,18 +11,17 @@ footer .wrapper {
   width: 1280px;
   height: 100%;
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 50px;
+}
+footer .wrapper a {
+  margin-left: -100px;
 }
 
 footer img {
   width: 45px;
   height: 45px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 footer .menu {
@@ -33,23 +32,48 @@ footer .menu div {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding: 0 20px;
+  border-right: #4e4e4e 1px solid;
 }
 
-footer .menu div p {
+footer .menu a {
   margin: 0;
-  padding: 0 20px;
   font-size: 14px;
   line-height: 1.4;
   color: white;
-}
-footer .menu div.first p {
-  padding-left: 0;
-}
-
-footer .menu div:not(.last) p {
-  border-right: #4e4e4e 1px solid;
+  text-decoration: none;
+  position: relative;
+  margin: 0 20px;
 }
 footer .author {
   color: #818181;
   font-size: 14px;
+}
+
+footer .menu a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  top: 102%;
+  left: 0%;
+  transition: 0.2s;
+}
+
+footer .menu a:hover:after {
+  width: 100%;
+}
+
+footer .menu a:not(:last-of-type):before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  background: #4e4e4e;
+  top: 30%;
+  left: calc(100% + 20px);
+  transition: 0.2s;
+  /* margin: 0 20px; */
 }

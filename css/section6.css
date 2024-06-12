@@ -18,24 +18,35 @@ section#screen6 .apps {
   justify-content: center;
 }
 
-section#screen6 .apps > div {
+section#screen6 .apps {
   display: flex;
 }
 
-section#screen6 .apps .icon {
-  display: flex;
-  width: 60px;
+section#screen6 .apps button {
+  width: 186px;
   height: 45px;
-  background-color: #009cc2;
+  background-color: #00afdb;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+  padding: 0;
 }
-
-section#screen6 .apps .icon img {
-  width: 17px;
-  height: 20px;
-}
-
-section#screen6 .apps .button {
+section#screen6 .apps button .title {
   width: 127px;
+}
+
+section#screen6 .apps button .icon {
+  width: 59px;
+  background-color: #009cc2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

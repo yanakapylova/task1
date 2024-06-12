@@ -27,7 +27,6 @@ nav > div.right {
   justify-content: start;
   gap: 85px;
   width: 175px;
-
 }
 
 nav a#logo img {
@@ -38,8 +37,23 @@ nav a#logo img {
 nav a:not(#logo) {
   color: white;
   text-decoration: none;
+  position: relative;
 }
 .active {
   font-weight: 500;
-  border-bottom: 1px white solid;
+}
+
+header nav > div a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  top: 104%;
+  left: 0%;
+  transition: 0.2s;
+}
+
+header nav > div a:hover:after {
+  width: 100%;
 }

@@ -23,9 +23,19 @@ section#screen1 div#main {
   margin-top: 134px;
 }
 
-section#screen1 div#main .socials img {
+section#screen1 div#main .socials a {
   width: 20px;
   height: 20px;
+  transition: 0.3s;
+}
+
+section#screen1 div#main .socials a:hover {
+  transform: scale(1.2);
+}
+
+section#screen1 div#main .socials a img {
+  width: 100%;
+  height: 100%;
 }
 
 section#screen1 div#main .socials  {

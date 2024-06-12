@@ -5,7 +5,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.button {
+button {
+
+  cursor: pointer;
+}
+
+button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right) {
   width: 185px;
   height: 45px;
   background-color: #00afdb;
@@ -16,12 +21,14 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  /* margin-top: 9px; */
   transition: 0.3s;
+  outline: none;
+  border: none;
+  margin-top: 10px;
 }
 
-.button:hover {
-  background-color: #009cc2;
+button:hover:not(.arrow.left, .arrow.right) {
+  background-color: #009cc2 !important;
 }
 
 h2 {
