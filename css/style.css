@@ -17,6 +17,7 @@ body {
   align-items: center;
   font-weight: 700;
   /* margin-top: 9px; */
+  transition: 0.3s;
 }
 
 .button:hover {
