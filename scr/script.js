@@ -12,7 +12,7 @@ function showPosition(position) {
   if (result == "PL") {
     price = 20;
     document.querySelector(".country").innerHTML = "Plan for Poland";
-  } else if (r.country == "LT") {
+  } else if (result == "LT") {
     price = 15;
     document.querySelector(".country").innerHTML = "Plan for Lithuania";
   }
