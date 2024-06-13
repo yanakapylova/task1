@@ -1,16 +1,15 @@
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition);
 } else {
-  document.getElementById("location").innerHTML =
-    "Геолокация не поддерживается.";
+  console.log("Геолокация не поддерживается.");
 }
 
 function showPosition(position) {
   //   var lat = position.coords.latitude;
   //   var lon = position.coords.longitude;
 
-  var lat = 52.2288;
-  var lon = 20.98446;
+//   var lat = 52.2288;
+//   var lon = 20.98446;
 
   let result = countryCoder.iso1A2Code('Q145');
     iso1A2Code([-4.5, 54.2]);
@@ -47,7 +46,6 @@ document.querySelector("#main button").addEventListener("click", () => {
   //     });
 
   document.querySelector(".bg").addEventListener("click", () => {
-    console.log("bg");
     document.querySelector(".bg").style.display = "none";
     document.querySelector(".popupWrapper").style.display = "none";
   });
