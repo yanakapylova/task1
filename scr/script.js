@@ -5,9 +5,12 @@ if (navigator.geolocation) {
 }
 
 function showPosition(position) {
-    let long = position.coords.longitude
-    let lat = position.coords.latitude
-  let result = countryCoder.iso1A2Code([position.coords.longitude, position.coords.latitude]);
+  console.log(position.coords.longitude);
+  console.log(position.coords.latitude);
+  let result = countryCoder.iso1A2Code([
+    position.coords.longitude,
+    position.coords.latitude,
+  ]);
 
   console.log(result);
 
