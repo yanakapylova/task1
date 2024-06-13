@@ -11,7 +11,7 @@ function showPosition(position) {
   //   var lat = 52.2288;
   //   var lon = 20.98446;
 
-  let result = countryCoder.iso1A2Code([lat, lon]);
+  let result = countryCoder.iso1A2Code([lon, lat]);
 
   console.log(result);
 
