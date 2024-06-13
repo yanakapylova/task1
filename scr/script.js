@@ -12,15 +12,16 @@ function showPosition(position) {
   var lat = 52.2288;
   var lon = 20.98446;
 
-  grid = codegrid.CodeGrid();
-  grid.getCode(lat, lon, (error, code) => {
-    console.log(code);
-  });
+  let result = countryCoder.iso1A2Code('Q145');
+    iso1A2Code([-4.5, 54.2]);
 
-  //   var result = countryCoder.iso1A2Code([lat, lon]);
+    console.log(result)
 
-//   document.querySelector("#total").innerHTML =
-//     "Широта: " + lat + "<br>Долгота: " + lon;
+//   grid = codegrid.CodeGrid();
+//   grid.getCode(lat, lon, (error, code) => {
+//     console.log(code);
+    	
+//   });
 }
 
 document.querySelector("#main button").addEventListener("click", () => {
