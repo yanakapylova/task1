@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/section5.css" />
     <link rel="stylesheet" href="css/section6.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@rapideditor/country-coder@5.2/dist/country-coder.iife.min.js"></script>
   </head>
   <body>
     <section id="screen1">
@@ -125,30 +128,49 @@
         notation.
       </p>
       <div class="apps">
-          <button id="appstore">
-            <div class="title">apple store</div>
-            <div class="icon">
-              <img src="img/apple.png" alt="" />
-            </div>
-          </button>
-          <button id="android">
-            <div class="title">Play Market</div>
-            <div class="icon">
-              <img src="img/android.png" alt="" />
-            </div>
-          </button>
+        <button id="appstore">
+          <div class="title">apple store</div>
+          <div class="icon">
+            <img src="img/apple.png" alt="" />
+          </div>
+        </button>
+        <button id="android">
+          <div class="title">Play Market</div>
+          <div class="icon">
+            <img src="img/android.png" alt="" />
+          </div>
+        </button>
       </div>
     </section>
     <footer>
       <div class="wrapper">
         <div class="menu">
-            <a href="#">Credits</a>
-            <a href="#">Privacy</a>
-            <a href="#">Our teams</a>
+          <a href="#">Credits</a>
+          <a href="#">Privacy</a>
+          <a href="#">Our teams</a>
         </div>
         <a href="#"><img src="img/logo.png" alt="logo" srcset="" /></a>
         <div class="author">by TonYem for RSS at 2020</div>
       </div>
     </footer>
+
+    <div class="bg"></div>
+    <div class="popupWrapper">
+      <div class="popup">
+        <div class="text country"></div>
+        <div id="price">
+          <span class="number"></span>$
+          <span class="text">per month</span>
+        </div>
+        <form>
+          <input type="text" placeholder="Number of months" />
+          <button id="submit">Submit</button>
+        </form>
+        <div id="total">Total: <span></span>$</div>
+        <button id="buy">Buy</button>
+      </div>
+    </div>
+
+    <script src="scr/script.js"></script>
   </body>
 </html>

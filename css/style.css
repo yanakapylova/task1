@@ -6,11 +6,10 @@ body {
 }
 
 button {
-
   cursor: pointer;
 }
 
-button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right) {
+button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right, #submit, #buy) {
   width: 185px;
   height: 45px;
   background-color: #00afdb;
@@ -27,7 +26,7 @@ button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right) {
   margin-top: 10px;
 }
 
-button:hover:not(.arrow.left, .arrow.right) {
+button:hover:not(.arrow.left, .arrow.right, #submit, #buy) {
   background-color: #009cc2 !important;
 }
 
