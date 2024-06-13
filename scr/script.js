@@ -8,19 +8,18 @@ function showPosition(position) {
   //   var lat = position.coords.latitude;
   //   var lon = position.coords.longitude;
 
-//   var lat = 52.2288;
-//   var lon = 20.98446;
+  //   var lat = 52.2288;
+  //   var lon = 20.98446;
 
-  let result = countryCoder.iso1A2Code('Q145');
-    iso1A2Code([-4.5, 54.2]);
+  let result = countryCoder.iso1A2Code([-4.5, 54.2]);
 
-    console.log(result)
+  console.log(result);
 
-//   grid = codegrid.CodeGrid();
-//   grid.getCode(lat, lon, (error, code) => {
-//     console.log(code);
-    	
-//   });
+  //   grid = codegrid.CodeGrid();
+  //   grid.getCode(lat, lon, (error, code) => {
+  //     console.log(code);
+
+  //   });
 }
 
 document.querySelector("#main button").addEventListener("click", () => {
