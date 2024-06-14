@@ -1,3 +1,5 @@
+let price = 15;
+
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition);
 } else {
@@ -25,12 +27,47 @@ function showPosition(position) {
   document.querySelector("#total span").innerHTML = price * 1;
 }
 
-document.querySelector("#main button").addEventListener("click", () => {
-  document.querySelector(".popupWrapper").style.display = "flex";
-  document.querySelector(".bg").style.display = "block";
+const buttonSubmit = document.querySelector(".popupWrapper form button#submit");
+const popupWrapper = document.querySelector(".popupWrapper");
+const bg = document.querySelector(".bg");
 
-  document.querySelector(".bg").addEventListener("click", () => {
-    document.querySelector(".bg").style.display = "none";
-    document.querySelector(".popupWrapper").style.display = "none";
+// для теста
+price = 20;
+document.querySelector(".country").innerHTML = "Plan for Poland";
+document.querySelector(".number").innerHTML = price;
+document.querySelector("#total span").innerHTML = price * 1;
+
+document.querySelector("#main button").addEventListener("click", () => {
+  popupWrapper.style.display = "flex";
+  bg.style.display = "block";
+
+  bg.addEventListener("click", () => {
+    bg.style.display = "none";
+    popupWrapper.style.display = "none";
   });
+
+  document.querySelector(".popupWrapper button#buy").addEventListener("click", () => {
+    bg.style.display = "none";
+    popupWrapper.style.display = "none";
+  });
+
+  document.querySelector(".popupWrapper .box .close").addEventListener("click", () => {
+    bg.style.display = "none";
+    popupWrapper.style.display = "none";
+  });
+});
+
+$(document).on(".popupWrapper form input", function (ev) {
+  const validNum = [];
+  for (let i = 1; i < 13; i++) {
+    validNum.push(i);
+  }
+
+  buttonSubmit.disabled = !validNum.includes(+$(ev.target).val());
+});
+
+buttonSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".popupWrapper #total span").innerHTML =
+    document.querySelector(".popupWrapper form input").value * price;
 });

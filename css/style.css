@@ -9,7 +9,7 @@ button {
   cursor: pointer;
 }
 
-button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right, #submit, #buy) {
+button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right, #submit, #buy, .close) {
   width: 185px;
   height: 45px;
   background-color: #00afdb;
@@ -26,7 +26,7 @@ button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right, #submit
   margin-top: 10px;
 }
 
-button:hover:not(.arrow.left, .arrow.right, #submit, #buy) {
+button:hover:not(.arrow.left, .arrow.right, #submit, #buy, .close) {
   background-color: #009cc2 !important;
 }
 

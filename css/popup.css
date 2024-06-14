@@ -33,6 +33,19 @@
   margin-bottom: 25px;
 }
 
+.popupWrapper .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.popupWrapper .box .close {
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
 .popupWrapper .text {
   font-size: 16px;
 }
@@ -77,6 +90,10 @@
   height: 48px;
   width: 122px;
   font-size: 20px;
+}
+
+.popupWrapper form button#submit:disabled {
+  background-color: rgba(0, 0, 0, 0.573);
 }
 
 .popupWrapper button#buy {
