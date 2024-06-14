@@ -1,14 +1,3 @@
-.bg {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.276);
-  display: none;
-  z-index: 1000;
-}
-
 .popupWrapper {
   display: none;
   justify-content: center;
@@ -19,6 +8,7 @@
   top: 0;
   bottom: 0;
   z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.276);
 }
 
 .popupWrapper .popup {
@@ -34,16 +24,16 @@
 }
 
 .popupWrapper .box {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .popupWrapper .box .close {
-    font-size: 1.2em;
-    border: none;
-    outline: none;
-    background-color: transparent;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .popupWrapper .text {
