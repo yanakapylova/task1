@@ -1,40 +1,40 @@
-let price = 15;
+let price;
 
-// if (navigator.geolocation) {
-//   navigator.geolocation.getCurrentPosition(showPosition);
-// } else {
-//   console.log("Геолокация не поддерживается.");
-// }
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+  console.log("Геолокация не поддерживается.");
+}
 
-// function showPosition(position) {
-//   console.log(position.coords.longitude);
-//   console.log(position.coords.latitude);
-//   let result = countryCoder.iso1A2Code([
-//     position.coords.longitude,
-//     position.coords.latitude,
-//   ]);
+function showPosition(position) {
+  console.log(position.coords.longitude);
+  console.log(position.coords.latitude);
+  let result = countryCoder.iso1A2Code([
+    position.coords.longitude,
+    position.coords.latitude,
+  ]);
 
-//   console.log(result);
+  console.log(result);
 
-//   if (result == "PL") {
-//     price = 20;
-//     document.querySelector(".country").innerHTML = "Plan for Poland";
-//   } else if (result == "LT") {
-//     price = 15;
-//     document.querySelector(".country").innerHTML = "Plan for Lithuania";
-//   }
-//   document.querySelector(".number").innerHTML = price;
-//   document.querySelector("#total span").innerHTML = price * 1;
-// }
+  if (result == "PL") {
+    price = 20;
+    document.querySelector(".country").innerHTML = "Plan for Poland";
+  } else if (result == "LT") {
+    price = 15;
+    document.querySelector(".country").innerHTML = "Plan for Lithuania";
+  }
+  document.querySelector(".number").innerHTML = price;
+  document.querySelector("#total span").innerHTML = price * 1;
+}
 
 const buttonSubmit = document.querySelector(".popupWrapper form button#submit");
 const popupWrapper = document.querySelector(".popupWrapper");
 
 // для теста
-price = 20;
-document.querySelector(".country").innerHTML = "Plan for Poland";
-document.querySelector(".number").innerHTML = price;
-document.querySelector("#total span").innerHTML = price * 1;
+// price = 20;
+// document.querySelector(".country").innerHTML = "Plan for Poland";
+// document.querySelector(".number").innerHTML = price;
+// document.querySelector("#total span").innerHTML = price * 1;
 
 document.querySelector("#main button").addEventListener("click", () => {
   popupWrapper.style.display = "flex";
@@ -51,7 +51,6 @@ document.querySelector("#main button").addEventListener("click", () => {
     .querySelector(".popupWrapper .popup")
     .addEventListener("click", (e) => {
       e.stopImmediatePropagation();
-      console.log("stopped");
     });
 
   document
