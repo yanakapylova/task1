@@ -32,10 +32,10 @@ const popupWrapper = document.querySelector(".popupWrapper");
 const bg = document.querySelector(".bg");
 
 // для теста
-price = 20;
-document.querySelector(".country").innerHTML = "Plan for Poland";
-document.querySelector(".number").innerHTML = price;
-document.querySelector("#total span").innerHTML = price * 1;
+// price = 20;
+// document.querySelector(".country").innerHTML = "Plan for Poland";
+// document.querySelector(".number").innerHTML = price;
+// document.querySelector("#total span").innerHTML = price * 1;
 
 document.querySelector("#main button").addEventListener("click", () => {
   popupWrapper.style.display = "flex";
