@@ -38,17 +38,17 @@ section#screen1 div#main .socials a img {
   height: 100%;
 }
 
-section#screen1 div#main .socials  {
- margin-top: 168px;
- display: flex;
- justify-content: center;
- gap: 30px;
+section#screen1 div#main .socials {
+  margin-top: 168px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 section#screen1 div#main p {
   width: 500px;
   margin: 0;
-  line-height: 150% ;
+  line-height: 150%;
   font-size: 18px;
   color: white;
 }
@@ -57,5 +57,32 @@ section#screen1 .button {
   margin-top: 9px;
 }
 
+@media screen and (max-width: 768px) {
+
+  section#screen1 {
+    height: auto;
+    padding: 40px 0;
+  }
 
 
+  section#screen1 div#main {
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  section#screen1 div#main .socials {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  section#screen1 h1 {
+    font-size: 42px;
+    letter-spacing: 2.5px;
+  }
+
+  section#screen1 div#main p {
+    width: 90%;
+    line-height: 120%;
+    font-size: 16px;
+  }
+}

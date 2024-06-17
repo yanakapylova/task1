@@ -70,3 +70,33 @@ section#screen5 h2 {
   text-transform: uppercase;
   text-align: center;
 }
+
+@media screen and (max-width: 980px) {
+  section#screen5 .wrapper {
+    grid-template-columns: 100vw;
+    padding: 40px 0;
+    gap: 30px;
+    align-content: center;
+    height: auto;
+    justify-items: center;
+  }
+
+  section#screen5 h2,
+  section#screen5 form {
+    grid-column: 1 / 2;
+  }
+
+  section#screen5 form {
+    width: auto;
+  }
+
+  section#screen5 input {
+    width: 90%;
+  }
+
+  section#screen5 {
+
+    height: auto;
+    padding: 20px 0;
+  }
+}

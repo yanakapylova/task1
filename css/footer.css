@@ -77,3 +77,25 @@ footer .menu a:not(:last-of-type):before {
   transition: 0.2s;
   /* margin: 0 20px; */
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  footer .wrapper {
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    padding: 0;
+  }
+
+  footer .author {
+    display: none;
+  }
+
+  footer .wrapper > a{
+    margin: 0;
+  }
+}

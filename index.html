@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/section6.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/burger-menu.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@rapideditor/country-coder@5.2/dist/country-coder.iife.min.js"></script>
     <script
@@ -39,10 +40,22 @@
           </div>
         </nav>
       </header>
+
+      <div class="burger-menu">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+        <label for="burger-checkbox" class="burger"></label>
+        <div class="burger-menu-list">
+          <div class="burger-menu-item"><a href="#">About</a></div>
+          <div class="burger-menu-item"><a href="#">Syllabus</a></div>
+          <div class="burger-menu-item"><a href="#">Projects</a></div>
+          <div class="burger-menu-item"><a href="#">FAQ</a></div>
+        </div>
+      </div>
+
       <div id="main">
         <h1>your life is WebDev</h1>
         <p>
-          Whatever the approach to development may be, the final<br />program
+          Whatever the approach to development may be, the final program
           must satisfy some fundamental properties
         </p>
         <button>get started</button>
@@ -129,7 +142,7 @@
       <h2>Download the App</h2>
       <p>
         Machine code was the language of early programs, written in the
-        instruction<br />set of the particular machine, often in binary
+        instruction set of the particular machine, often in binary
         notation.
       </p>
       <div class="apps">

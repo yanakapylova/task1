@@ -50,3 +50,20 @@ section#screen6 .apps button .icon {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  section#screen6 {
+    padding: 60px 0;
+    height: auto;
+  }
+
+  section#screen6 .apps {
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  section#screen6 p {
+    width: 90%;
+  }
+}

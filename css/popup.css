@@ -91,3 +91,26 @@
   width: 370px;
   font-size: 16px;
 }
+
+@media screen and (max-width: 768px) {
+  .popupWrapper .popup {
+    height: auto;
+    padding: 40px;
+    width: 70%;
+  }
+
+  .popupWrapper button#buy {
+    width: 100%;
+  }
+
+  .popupWrapper .popup .box {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .popupWrapper form {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

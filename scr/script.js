@@ -1,10 +1,10 @@
 let price;
 
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(showPosition);
-} else {
-  console.log("Геолокация не поддерживается.");
-}
+// if (navigator.geolocation) {
+//   navigator.geolocation.getCurrentPosition(showPosition);
+// } else {
+//   console.log("Геолокация не поддерживается.");
+// }
 
 function showPosition(position) {
   console.log(position.coords.longitude);

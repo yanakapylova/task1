@@ -23,8 +23,8 @@ section#screen2 .content-image-1 {
 }
 
 section#screen2 .content-image-1 img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 section#screen2 .content-block {
   grid-column: 2 / 6;
@@ -35,5 +35,37 @@ section#screen2 .content-block {
 }
 
 section#screen2 .content-block p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  section#screen2 .wrapper {
+    grid-template-columns: 100vw;
+    padding: 40px 0;
+    gap: 30px;
+    align-content: center;
+    height: auto;
+    justify-items: center;
+  }
+
+  section#screen2 .content-image-1 {
+    width: 300px;
+    grid-column: auto;
+    grid-row: 1 / 2;
+    margin: 0;
+    align-self: center;
+  }
+
+  section#screen2 .content-block {
+    grid-column: auto;
+    grid-row: 2 / 3;
+    margin-top: 0;
+    text-align: center;
+    width: 90%;
+  }
+
+  button:not(#emailSubmit, #appstore, #android, .arrow.left, .arrow.right, #submit, #buy, .close) {
+    margin: 0 auto;
+  }
+}
+
