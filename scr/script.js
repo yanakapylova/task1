@@ -1,20 +1,16 @@
 let price;
 
-// if (navigator.geolocation) {
-//   navigator.geolocation.getCurrentPosition(showPosition);
-// } else {
-//   console.log("Геолокация не поддерживается.");
-// }
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition);
+} else {
+  console.log("Геолокация не поддерживается.");
+}
 
 function showPosition(position) {
-  console.log(position.coords.longitude);
-  console.log(position.coords.latitude);
   let result = countryCoder.iso1A2Code([
     position.coords.longitude,
     position.coords.latitude,
   ]);
-
-  console.log(result);
 
   if (result == "PL") {
     price = 20;

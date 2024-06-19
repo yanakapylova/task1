@@ -62,4 +62,11 @@ header nav > div a:hover:after {
   header nav .left, header nav .right {
     display: none;
   }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+  }
 }
