@@ -34,7 +34,6 @@
         });
       })();
     </script>
-    
   </head>
   <body>
     <section id="screen1">
@@ -158,18 +157,25 @@
         instruction set of the particular machine, often in binary notation.
       </p>
       <div class="apps">
-        <button id="appstore">
-          <div class="title">apple store</div>
-          <div class="icon">
-            <img src="img/apple.png" alt="" />
-          </div>
-        </button>
-        <button id="android">
-          <div class="title">Play Market</div>
-          <div class="icon">
-            <img src="img/android.png" alt="" />
-          </div>
-        </button>
+        <a
+          href="https://apps.apple.com/us/app/instagram/id389801252"
+          target="_blank"
+          ><button id="appstore">
+            <div class="title">apple store</div>
+            <div class="icon">
+              <img src="img/apple.png" alt="" />
+            </div></button
+        ></a>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.instagram.android&pcampaignid=web_share"
+          target="_blank"
+          ><button id="android">
+            <div class="title">Play Market</div>
+            <div class="icon">
+              <img src="img/android.png" alt="" />
+            </div></button
+        ></a>
       </div>
     </section>
     <footer>
@@ -215,7 +221,7 @@
           .addEventListener("submit", function (event) {
             event.preventDefault();
             // these IDs from the previous steps
-            console.log(document.querySelector("#emailSubmit"))
+            console.log(document.querySelector("#emailSubmit"));
             emailjs.send("service_test_1234qwerty", "template_2ewxijd", {
               from_name: "Yana",
               to_email: document.querySelector("#emailForm input").value,
