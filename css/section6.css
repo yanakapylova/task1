@@ -22,6 +22,10 @@ section#screen6 .apps {
   display: flex;
 }
 
+section#screen6 .apps a {
+  text-decoration: none;
+}
+
 section#screen6 .apps button {
   width: 186px;
   height: 45px;
