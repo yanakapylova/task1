@@ -22,6 +22,18 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "Sq-CPvy20eEdeb-H5",
+        });
+      })();
+    </script>
   </head>
   <body>
     <section id="screen1">
@@ -55,15 +67,15 @@
       <div id="main">
         <h1>your life is WebDev</h1>
         <p>
-          Whatever the approach to development may be, the final program
-          must satisfy some fundamental properties
+          Whatever the approach to development may be, the final program must
+          satisfy some fundamental properties
         </p>
         <button>get started</button>
         <div class="socials">
           <a href="#"><img src="img/mail.png" alt="" /></a>
-          <a href="#"><img src="img/facebook.svg" alt="" /></a>
+          <a href="#"><img src="img/facebook.png" alt="" /></a>
           <a href="#"><img src="img/insta.png" alt="" /></a>
-          <a href="#"><img src="img/youtube.svg" alt="" /></a>
+          <a href="#"><img src="img/youtube.png" alt="" /></a>
         </div>
       </div>
     </section>
@@ -130,7 +142,7 @@
     <section id="screen5">
       <div class="wrapper">
         <h2>sign up for our newsletter</h2>
-        <form>
+        <form id="emailForm">
           <input type="text" placeholder="E-mail" />
           <button id="emailSubmit">
             <img src="img/check-icon.png" alt="" />
@@ -142,22 +154,28 @@
       <h2>Download the App</h2>
       <p>
         Machine code was the language of early programs, written in the
-        instruction set of the particular machine, often in binary
-        notation.
+        instruction set of the particular machine, often in binary notation.
       </p>
       <div class="apps">
-        <button id="appstore">
-          <div class="title">apple store</div>
-          <div class="icon">
-            <img src="img/apple.png" alt="" />
-          </div>
-        </button>
-        <button id="android">
-          <div class="title">Play Market</div>
-          <div class="icon">
-            <img src="img/android.png" alt="" />
-          </div>
-        </button>
+        <a
+          href="https://apps.apple.com/us/app/instagram/id389801252"
+          target="_blank"
+          ><button id="appstore">
+            <div class="title">apple store</div>
+            <div class="icon">
+              <img src="img/apple.png" alt="" />
+            </div></button
+        ></a>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.instagram.android&pcampaignid=web_share"
+          target="_blank"
+          ><button id="android">
+            <div class="title">Play Market</div>
+            <div class="icon">
+              <img src="img/android.png" alt="" />
+            </div></button
+        ></a>
       </div>
     </section>
     <footer>
@@ -195,6 +213,21 @@
         <button id="buy">Buy</button>
       </div>
     </div>
-    <script src="scr/script.js"></script>
+    <script src="src/script.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("emailForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            console.log(document.querySelector("#emailSubmit"));
+            emailjs.send("service_test_1234qwerty", "template_2ewxijd", {
+              from_name: "Yana",
+              to_email: document.querySelector("#emailForm input").value,
+            });
+          });
+      };
+    </script>
   </body>
 </html>
